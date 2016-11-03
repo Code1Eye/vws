@@ -1,0 +1,15 @@
+extends userLayout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+
+    #banner.page-header
+        .row
+            .col-lg-6
+             h1 Game
+             
+        .row
+            .col-lg-6
+            button(type="button", onclick="window.open('/downloadGame', '_blank');") download

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+
+    #banner.page-header
+        .row
+            .col-lg-6
+             h1 Login
+                
+        .row
+            .col-lg-6
+            form(action="/inlog" , method="post")
+                div.input
+                    input(type="email", name="mail", placeholder="e-mail")
+                div.input
+                    input(type="password", name="ww", placeholder="Wachtwoord")
+                div.actions
+                    input(type="submit", value="login")
+            
