@@ -67,7 +67,7 @@ router.post('/add', function(req, res){
                 from: 'testnodemailserver@gmail.com',
                 to: user.getEmail(),
                 subject: 'Activeer account',
-                html: "<a href='http://localhost:9876/activate?email=" + user.getEmail() + "'>activeer uw VrouwenWillenSchoenen Account</a>"
+                html: "<a href='https://hidden-headland-69864.herokuapp.com/activate?email=" + user.getEmail() + "'>activeer uw VrouwenWillenSchoenen Account</a>"
                 
             };
             transporter.sendMail(mailOptions, function(err, info){
